@@ -147,6 +147,105 @@ input {
   -ms-flex-wrap: none;
       flex-wrap: none;
   font-family: 'Josefin Sans', sans-serif;
-  weight: 300px;
+  font-weight: 400px;
+}
+
+.header {
+  background: url(../img/header/backgrond.svg) no-repeat;
+  width: 1440px;
+  background-size: cover;
+  padding: 64px 165px 146px 165px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+}
+
+.header__logo {
+  background: url(../img/header/logo.svg) no-repeat;
+  width: 197px;
+  height: 32px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  margin-top: 4px;
+}
+
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  position: relative;
+}
+
+.header__link {
+  color: #fff;
+  font-family: 'Alata', sans-serif;
+}
+
+.header__item:hover::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #FFFFFF;
+  bottom: 1px;
+  text-align: center;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__slogan {
+  margin-top: 130px;
+  width: 650px;
+  font-size: 72px;
+  font-weight: 300;
+  color: #fff;
+  border: 2px solid #FFFFFF;
+  text-transform: uppercase;
+  padding: 40px;
 }
 /*# sourceMappingURL=main.css.map */
