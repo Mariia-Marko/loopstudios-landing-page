@@ -45,14 +45,14 @@
 
     &__right-content {
         @include flexiblePlacement(none, none, column, none);
-        text-align: right;
     }
 
     &__socials {
         @include flexiblePlacement(none, none, none, none);
         background: url(../img/footer/socials-icon.svg) no-repeat;
-        width: 144px;
+        width: 150px;
         height: 24px;
+        margin-left: auto;
     }
 
     &__copyright {
@@ -65,4 +65,32 @@
         margin-top: 33px;
     }
 
+    &__socials-link {
+        width: 10px;
+        height: 10px;
+        color: brown;
+        cursor: pointer;
+    }
+
+    &__socials-item {
+        width: 24px;
+        height: 24px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__socials-item:not(:last-child) {
+        margin-right: 16px;
+    }
+
+    &__socials-item:hover::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background: #FFFFFF;
+        top: 24px;
+        text-align: center;
+        margin-top: 8px;
+    }
 }

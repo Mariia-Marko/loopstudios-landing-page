@@ -3,7 +3,7 @@
 @import './config/mixins';
 
 .wrapper {
-    width: 1440px;
+    width: 95%;
     margin: 0 auto;
     background: #F2F2F2;
     @include flexiblePlacement(none, none, column, none);
