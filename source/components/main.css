@@ -130,7 +130,7 @@ input {
 .wrapper {
   width: 95%;
   margin: 0 auto;
-  background: #F2F2F2;
+  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,11 +243,98 @@ input {
   margin-top: 130px;
   width: 650px;
   font-size: 72px;
-  font-weight: 300;
   color: #fff;
   border: 2px solid #FFFFFF;
   text-transform: uppercase;
   padding: 40px;
+  font-weight: 100;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  margin: 202px 163px 184px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400px;
+}
+
+.main-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  position: relative;
+}
+
+.main-intro__img {
+  background: url(../img/main/man-photo.svg) no-repeat;
+  width: 731px;
+  height: 500px;
+}
+
+.main-intro__content {
+  background: white;
+  width: 541px;
+  padding: 96px 0 0 96px;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
+  right: 0;
+}
+
+.main-intro__title {
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.main-intro__text {
+  font-family: Alata;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  opacity: 0.5;
 }
 
 .footer {

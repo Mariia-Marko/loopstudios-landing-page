@@ -1,0 +1,45 @@
+.main {
+    @include flexiblePlacement(none, none, column, none);
+    margin: 202px 163px 184px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400px;
+}
+
+.main-intro {
+    @include flexiblePlacement(none, none, none, none);
+    position: relative;
+
+    &__img {
+        background: url(../img/main/man-photo.svg) no-repeat;
+        width: 731px;
+        height: 500px;
+    }
+
+    &__content {
+        background: white;
+        width: 541px;
+        padding: 96px 0 0 96px;
+        position: absolute;
+        bottom: 0;
+        @include flexiblePlacement( flex-end, none, column, none);
+        right: 0;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    &__text {
+        font-family: Alata;
+        font-size: 15px;
+        line-height: 25px;
+        color: #000000;
+        opacity: 0.5;
+    }
+
+}
