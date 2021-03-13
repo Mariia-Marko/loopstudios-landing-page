@@ -152,9 +152,10 @@ input {
 
 .header {
   background: url(../img/header/backgrond.svg) no-repeat;
-  width: 1440px;
+  width: 100%;
   background-size: cover;
-  padding: 64px 165px 146px 165px;
+  padding: 64px 165px 146px;
+  background-color: black;
 }
 
 .header__nav {
