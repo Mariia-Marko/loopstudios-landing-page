@@ -6,7 +6,7 @@
     width: 1440px;
     margin: 0 auto;
     background: #F2F2F2;
-    @include flexiblePlacement(none, none, none, none);
+    @include flexiblePlacement(none, none, column, none);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400px;
 }
