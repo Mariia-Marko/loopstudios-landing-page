@@ -393,12 +393,76 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: none;
           flex-direction: none;
-  -ms-flex-wrap: none;
-      flex-wrap: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
 }
 
 .main__item {
-  background: yellowgreen;
+  position: relative;
+  width: 256px;
+  height: 450px;
+  margin: 0 15px 15px 15px;
+  background-color: black;
+}
+
+.main__item:nth-child(1) {
+  margin-left: 0;
+  background: url(../img/main/earth.svg) no-repeat;
+}
+
+.main__item:nth-child(2) {
+  background: url(../img/main/bitmap.svg) no-repeat;
+}
+
+.main__item:nth-child(3) {
+  background: url(../img/main/soccer.svg) no-repeat;
+}
+
+.main__item:nth-child(4) {
+  margin-right: 0;
+  background: url(../img/main/grid.svg);
+}
+
+.main__item:nth-child(5) {
+  margin-left: 0;
+  background: url(../img/main/road.svg);
+}
+
+.main__item:nth-child(6) {
+  background: url(../img/main/bitmap.svg) no-repeat;
+}
+
+.main__item:nth-child(7) {
+  background: url(../img/main/robot.svg) no-repeat;
+}
+
+.main__item:nth-child(8) {
+  margin-right: 0;
+  background: url(../img/main/fisheye.svg);
+}
+
+.main__item:nth-last-child(-n+4) {
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+.main__link {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 32px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 67px 34px 40px;
+}
+
+.main__link:hover {
+  color: black;
+}
+
+.text-big {
+  margin-right: 0px;
 }
 
 .footer {
