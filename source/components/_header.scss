@@ -17,7 +17,7 @@
 
     &__list {
         @include flexiblePlacement(none, none, none, none);
-        margin-top: 4px;
+        margin-top: 12px;
     }
 
     &__item {
@@ -34,9 +34,9 @@
         content: '';
         position: absolute;
         width: 24px;
-        height: 2px;
+        height: 2.5px;
         background: #FFFFFF;
-        bottom: 1px;
+        top: 27px;
         text-align: center;
     }
 

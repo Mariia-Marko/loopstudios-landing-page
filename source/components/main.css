@@ -198,7 +198,7 @@ input {
           flex-direction: none;
   -ms-flex-wrap: none;
       flex-wrap: none;
-  margin-top: 4px;
+  margin-top: 12px;
 }
 
 .header__item {
@@ -229,9 +229,9 @@ input {
   content: '';
   position: absolute;
   width: 24px;
-  height: 2px;
+  height: 2.5px;
   background: #FFFFFF;
-  bottom: 1px;
+  top: 27px;
   text-align: center;
 }
 
@@ -383,9 +383,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: none;
       -ms-flex-align: none;
           align-items: none;
@@ -400,69 +400,108 @@ input {
 }
 
 .main__item {
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+  -ms-flex-wrap: none;
+      flex-wrap: none;
   width: 256px;
   height: 450px;
-  margin: 0 15px 15px 15px;
-  background-color: black;
+  font-size: 32px;
+  color: #fff;
+  padding: 0 40px 32px 40px;
+  cursor: pointer;
+}
+
+.main__item:nth-child(-n+4) {
+  margin-bottom: 30px;
 }
 
 .main__item:nth-child(1) {
-  margin-left: 0;
-  background: url(../img/main/earth.svg) no-repeat;
+  background: url(../img/main/earth.svg);
 }
 
 .main__item:nth-child(2) {
-  background: url(../img/main/bitmap.svg) no-repeat;
+  background: url(../img/main/arcade.svg);
 }
 
 .main__item:nth-child(3) {
-  background: url(../img/main/soccer.svg) no-repeat;
+  background: url(../img/main/soccer.svg);
 }
 
 .main__item:nth-child(4) {
-  margin-right: 0;
   background: url(../img/main/grid.svg);
+  padding-right: 70px;
 }
 
 .main__item:nth-child(5) {
-  margin-left: 0;
   background: url(../img/main/road.svg);
 }
 
 .main__item:nth-child(6) {
-  background: url(../img/main/bitmap.svg) no-repeat;
+  background: url(../img/main/bitmap.svg);
 }
 
 .main__item:nth-child(7) {
-  background: url(../img/main/robot.svg) no-repeat;
+  background: url(../img/main/robot.svg);
 }
 
 .main__item:nth-child(8) {
-  margin-right: 0;
   background: url(../img/main/fisheye.svg);
 }
 
-.main__item:nth-last-child(-n+4) {
-  margin-bottom: 0;
-  margin-top: 15px;
-}
-
-.main__link {
-  text-transform: uppercase;
-  color: #FFFFFF;
-  font-size: 32px;
-  position: absolute;
-  bottom: 0;
-  margin: 0 67px 34px 40px;
-}
-
-.main__link:hover {
+.main__item:hover {
   color: black;
 }
 
-.text-big {
-  margin-right: 0px;
+.main__item:hover:nth-child(1) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../img/main/earth.svg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/earth.svg) no-repeat;
+}
+
+.main__item:hover:nth-child(2) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../img/main/arcade.svg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/arcade.svg) no-repeat;
+}
+
+.main__item:hover:nth-child(3) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../img/main/soccer.svg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/soccer.svg) no-repeat;
+}
+
+.main__item:hover:nth-child(4) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../img/main/grid.svg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/grid.svg) no-repeat;
+}
+
+.main__item:hover:nth-child(5) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../img/main/road.svg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/road.svg) no-repeat;
+}
+
+.main__item:hover:nth-child(6) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../img/main/bitmap.svg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/bitmap.svg) no-repeat;
+}
+
+.main__item:hover:nth-child(7) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../img/main/robot.svg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/robot.svg) no-repeat;
+}
+
+.main__item:hover:nth-child(8) {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url(../img/main/fisheye.svg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/fisheye.svg) no-repeat;
 }
 
 .footer {
@@ -561,9 +600,9 @@ input {
   content: '';
   position: absolute;
   width: 24px;
-  height: 2px;
+  height: 2.5px;
   background: #FFFFFF;
-  top: 24px;
+  top: 29px;
   text-align: center;
 }
 
@@ -639,7 +678,7 @@ input {
   content: '';
   position: absolute;
   width: 24px;
-  height: 2px;
+  height: 3px;
   background: #FFFFFF;
   top: 24px;
   text-align: center;
