@@ -293,7 +293,7 @@ input {
 
 .main-intro__img {
   background: url(../img/main/man-photo.svg) no-repeat;
-  width: 80%;
+  width: 74%;
   background-size: contain;
   height: 500px;
 }
@@ -766,16 +766,20 @@ input {
             flex-direction: column;
     -ms-flex-wrap: none;
         flex-wrap: none;
-    padding: 0;
+    padding: 74px 64px 0 75px;
+    text-align: center;
     margin-top: 48px;
     position: inherit;
+  }
+  .main-intro__img {
+    height: 276px;
   }
   .header {
     margin: 0;
     padding: 40px 24px 227px 24px;
   }
   .main {
-    /* margin: 40px 24px 227px 24px;*/
+    margin: 40px 24px 227px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -806,7 +810,6 @@ input {
     padding: 0, 40px;
     width: 327px;
     font-size: 40px;
-    background: blueviolet;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -28,9 +28,14 @@
 
     .main-intro__content {
         @include flexiblePlacement(center, center, column, none);
-        padding: 0;
+        padding: 74px 64px 0 75px;
+    text-align: center;
         margin-top: 48px;
         position: inherit;
+    }
+
+    .main-intro__img {
+        height: 276px;
     }
 
     .header {
@@ -39,7 +44,7 @@
     }
 
     .main {
-        /* margin: 40px 24px 227px 24px;*/
+        margin: 40px 24px 227px 0;
         @include flexiblePlacement(center, center, none, none);
         width: 100%;
     }
@@ -57,7 +62,7 @@
         padding: 0, 40px;
         width: 327px;
         font-size: 40px;
-        background: blueviolet;
+
     }
 
 
