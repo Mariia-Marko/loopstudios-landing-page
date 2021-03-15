@@ -17,7 +17,7 @@
 
     &__list {
         @include flexiblePlacement(none, none, none, none);
-        margin-top: 12px;
+        margin-top: 9px;
     }
 
     &__item {
@@ -47,7 +47,8 @@
     &__slogan {
         margin-top: 130px;
         width: 650px;
-        font-size: 72px;
+        font-size: calc(4vw + 7px);
+
         color: #fff;
         border: 2px solid #FFFFFF;
         text-transform: uppercase;
