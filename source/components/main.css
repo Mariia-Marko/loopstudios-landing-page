@@ -796,6 +796,7 @@ input {
     -ms-flex-wrap: none;
         flex-wrap: none;
     width: 100%;
+    position: relative;
   }
 }
 
@@ -810,6 +811,11 @@ input {
     padding: 0, 40px;
     width: 327px;
     font-size: 40px;
+  }
+  .main__btn {
+    position: absolute;
+    bottom: 0;
+    margin-top: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */
