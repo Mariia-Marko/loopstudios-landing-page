@@ -293,7 +293,8 @@ input {
 
 .main-intro__img {
   background: url(../img/main/man-photo.svg) no-repeat;
-  width: 731px;
+  width: 80%;
+  background-size: contain;
   height: 500px;
 }
 
@@ -769,11 +770,43 @@ input {
     margin-top: 48px;
     position: inherit;
   }
+  .header {
+    margin: 0;
+    padding: 40px 24px 227px 24px;
+  }
+  .main {
+    /* margin: 40px 24px 227px 24px;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: none;
+            flex-direction: none;
+    -ms-flex-wrap: none;
+        flex-wrap: none;
+    width: 100%;
+  }
 }
 
 @media (max-width: 1050px) {
+  .wrapper {
+    width: 100%;
+  }
   .header__list {
     display: none;
+  }
+  .header__slogan {
+    padding: 0, 40px;
+    width: 327px;
+    font-size: 40px;
+    background: blueviolet;
   }
 }
 /*# sourceMappingURL=main.css.map */

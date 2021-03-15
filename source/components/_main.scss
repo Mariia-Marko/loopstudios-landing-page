@@ -12,7 +12,8 @@
 
     &__img {
         background: url(../img/main/man-photo.svg) no-repeat;
-        width: 731px; 
+        width: 80% ;
+        background-size: contain;
         height: 500px;
     }
 

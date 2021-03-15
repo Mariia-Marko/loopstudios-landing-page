@@ -33,17 +33,33 @@
         position: inherit;
     }
 
+    .header {
+        margin: 0;
+        padding: 40px 24px 227px 24px;
+    }
 
-
+    .main {
+        /* margin: 40px 24px 227px 24px;*/
+        @include flexiblePlacement(center, center, none, none);
+        width: 100%;
+    }
 }
 
 @media (max-width: 1050px) {
-        .header__list {
+    .wrapper {
+        width: 100%;
+    }
+    .header__list {
         display: none;
     }
 
     .header__slogan {
-
+        padding: 0, 40px;
+        width: 327px;
+        font-size: 40px;
+        background: blueviolet;
     }
+
+
 
 }
