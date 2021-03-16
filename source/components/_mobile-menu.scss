@@ -12,13 +12,24 @@ color: white;
 text-transform: uppercase;
     }
 
+    &__head {
+    @include flexiblePlacement(space-between, none, none, none);
+    }
+
     &__item:not(:last-child) {
         margin-bottom: 24px;
+    }
+
+    &__btn {
+        background: url(../img/mobile-menu/burger-menu.svg) no-repeat;
+        width: 24px;
+        height: 16px;
+        border: none;
     }
 }
 
 .mobile-menu__logo {
-    background: url(../img/header/logo.svg) no-repeat;
+    background: url(../img/mobile-menu/logo.svg) no-repeat;
     
     width: 197px;
     height: 32px;
