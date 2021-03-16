@@ -51,6 +51,10 @@
     }
 }
 
+.mobile-menu {
+    display: block;
+}
+
 @media (max-width: 1050px) {
     .wrapper {
         width: 100%;
@@ -71,7 +75,4 @@
         bottom: 0;
         margin-top: 50px;
     }
-
-
-
 }

@@ -1,0 +1,15 @@
+.mobile-menu {
+    display: none;
+    width: 100%;
+    background: black;
+    @include flexiblePlacement(center, center, column, none);
+}
+
+.mobile-menu__logo {
+    background: url(../img/header/logo.svg) no-repeat;
+    
+    width: 197px;
+    height: 32px;
+    
+    display: block;
+}
