@@ -3,6 +3,18 @@
     width: 100%;
     background: black;
     @include flexiblePlacement(center, center, column, none);
+    padding: 40px 24px;
+
+    &__link {
+        font-size: 24px;
+line-height: 25px;
+color: white;
+text-transform: uppercase;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 24px;
+    }
 }
 
 .mobile-menu__logo {
@@ -12,4 +24,5 @@
     height: 32px;
     
     display: block;
+    margin-bottom: 160px;
 }

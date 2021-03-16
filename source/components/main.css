@@ -169,6 +169,18 @@ input {
           flex-direction: column;
   -ms-flex-wrap: none;
       flex-wrap: none;
+  padding: 40px 24px;
+}
+
+.mobile-menu__link {
+  font-size: 24px;
+  line-height: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .mobile-menu__logo {
@@ -176,6 +188,7 @@ input {
   width: 197px;
   height: 32px;
   display: block;
+  margin-bottom: 160px;
 }
 
 .header {
