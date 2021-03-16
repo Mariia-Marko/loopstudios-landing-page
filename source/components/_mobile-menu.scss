@@ -1,32 +1,28 @@
-.mobile-menu {
+.burger-menu {
     display: none;
     width: 100%;
     background: black;
-    @include flexiblePlacement(center, center, column, none);
+    @include flexiblePlacement(none, none, column, none);
     padding: 40px 24px;
 
-    &__link {
-        font-size: 24px;
-line-height: 25px;
-color: white;
-text-transform: uppercase;
-    }
+}
 
-    &__head {
+.bmbtn {
+    background: url(../img/mobile-menu/burger-menu.svg) no-repeat;
+    width: 24px;
+    height: 16px;
+    border: none;
+}
+.mobile-menu__link {
+    font-size: 24px;
+    line-height: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+    .nav {
     @include flexiblePlacement(space-between, none, none, none);
     }
 
-    &__item:not(:last-child) {
-        margin-bottom: 24px;
-    }
-
-    &__btn {
-        background: url(../img/mobile-menu/burger-menu.svg) no-repeat;
-        width: 24px;
-        height: 16px;
-        border: none;
-    }
-}
 
 .mobile-menu__logo {
     background: url(../img/mobile-menu/logo.svg) no-repeat;
@@ -36,4 +32,8 @@ text-transform: uppercase;
     
     display: block;
     margin-bottom: 160px;
+}
+
+.mobile-menu__item:not(:last-child) {
+    margin-bottom: 24px;
 }
