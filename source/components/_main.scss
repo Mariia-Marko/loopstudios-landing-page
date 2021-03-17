@@ -130,33 +130,33 @@
 }
 
 .main__item:hover:nth-child(1) {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/earth.svg) no-repeat;
+    background: $linearGradient, url(../img/main/earth.svg) no-repeat;
 }
 
 .main__item:hover:nth-child(2) {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/arcade.svg) no-repeat;
+    background: $linearGradient, url(../img/main/arcade.svg) no-repeat;
 }
 
 .main__item:hover:nth-child(3) {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/soccer.svg) no-repeat;
+    background: $linearGradient, url(../img/main/soccer.svg) no-repeat;
 }
 
 .main__item:hover:nth-child(4) {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/grid.svg) no-repeat;
+    background: $linearGradient, url(../img/main/grid.svg) no-repeat;
 }
 
 .main__item:hover:nth-child(5) {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/road.svg) no-repeat;
+    background: $linearGradient, url(../img/main/road.svg) no-repeat;
 }
 
 .main__item:hover:nth-child(6) {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/bitmap.svg) no-repeat;
+    background: $linearGradient, url(../img/main/bitmap.svg) no-repeat;
 }
 
 .main__item:hover:nth-child(7) {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/robot.svg) no-repeat;
+    background: $linearGradient, url(../img/main/robot.svg) no-repeat;
 }
 
 .main__item:hover:nth-child(8) {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/main/fisheye.svg) no-repeat;
+    background: $linearGradient, url(../img/main/fisheye.svg) no-repeat;
 }
