@@ -4,7 +4,6 @@
     background: black;
     @include flexiblePlacement(none, none, column, none);
     padding: 40px 24px;
-
 }
 
 .bmbtn {
@@ -13,16 +12,16 @@
     height: 16px;
     border: none;
 }
+
 .mobile-menu__link {
     font-size: 24px;
     line-height: 25px;
     color: white;
     text-transform: uppercase;
 }
-    .nav {
+.nav {
     @include flexiblePlacement(space-between, none, none, none);
-    }
-
+}
 
 .mobile-menu__logo {
     background: url(../img/mobile-menu/logo.svg) no-repeat;
