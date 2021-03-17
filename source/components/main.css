@@ -151,9 +151,6 @@ input {
 }
 
 .burger-menu {
-  display: none;
-  width: 100%;
-  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,20 +167,23 @@ input {
   -ms-flex-wrap: none;
       flex-wrap: none;
   padding: 40px 24px;
+  display: none;
+  width: 100%;
+  background: black;
 }
 
 .bmbtn {
-  background: url(../img/mobile-menu/burger-menu.svg) no-repeat;
   width: 24px;
   height: 16px;
   border: none;
+  background: url(../img/mobile-menu/burger-menu.svg) no-repeat;
 }
 
 .mobile-menu__link {
+  text-transform: uppercase;
   font-size: 24px;
   line-height: 25px;
   color: white;
-  text-transform: uppercase;
 }
 
 .nav {
@@ -205,11 +205,11 @@ input {
 }
 
 .mobile-menu__logo {
-  background: url(../img/mobile-menu/logo.svg) no-repeat;
   width: 197px;
   height: 32px;
   display: block;
   margin-bottom: 160px;
+  background: url(../img/mobile-menu/logo.svg) no-repeat;
 }
 
 .mobile-menu__item:not(:last-child) {
