@@ -12,19 +12,19 @@
 
     &__img {
         background: url(../img/main/man-photo.svg) no-repeat;
+        height: 500px;
         width: 74%;
         background-size: contain;
-        height: 500px;
     }
 
     &__content {
-        background: white;
+        position: absolute;
+        @include flexiblePlacement( flex-end, none, column, none);
+        bottom: 0;
+        right: 0;
         width: 541px;
         padding: 96px 0 0 96px;
-        position: absolute;
-        bottom: 0;
-        @include flexiblePlacement( flex-end, none, column, none);
-        right: 0;
+        background: white;
     }
 
     &__title {
@@ -51,11 +51,11 @@
 }
 
 .main__btn {
+    margin-left: auto;
     width: 157px;
     height: 40px;
     border: 1px solid #000000;
     background: white;
-    margin-left: auto;
     font-size: 14px;
     letter-spacing: 5px;
 }
@@ -80,11 +80,11 @@
 
 .main__item {
     @include flexiblePlacement(none, flex-end, none, none);
+    padding: 0 40px 32px 40px;
     width: 256px;
     height: 450px;
     font-size: 32px; 
     color: #fff;
-    padding: 0 40px 32px 40px;
     cursor: pointer;
 }
 

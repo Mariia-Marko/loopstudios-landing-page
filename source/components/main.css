@@ -218,9 +218,9 @@ input {
 
 .header {
   background: url(../img/header/backgrond.svg) no-repeat;
+  padding: 64px 165px 146px;
   width: 100%;
   background-size: cover;
-  padding: 64px 165px 146px;
   background-color: black;
 }
 
@@ -296,8 +296,8 @@ input {
   position: absolute;
   width: 24px;
   height: 2.5px;
-  background: #FFFFFF;
   top: 27px;
+  background: #FFFFFF;
   text-align: center;
 }
 
@@ -307,12 +307,12 @@ input {
 
 .header__slogan {
   margin-top: 130px;
+  padding: 40px;
   width: 650px;
   font-size: calc(4vw + 7px);
   color: #fff;
   border: 2px solid #FFFFFF;
   text-transform: uppercase;
-  padding: 40px;
   font-weight: 100;
 }
 
@@ -359,17 +359,13 @@ input {
 
 .main-intro__img {
   background: url(../img/main/man-photo.svg) no-repeat;
+  height: 500px;
   width: 74%;
   background-size: contain;
-  height: 500px;
 }
 
 .main-intro__content {
-  background: white;
-  width: 541px;
-  padding: 96px 0 0 96px;
   position: absolute;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +381,11 @@ input {
           flex-direction: column;
   -ms-flex-wrap: none;
       flex-wrap: none;
+  bottom: 0;
   right: 0;
+  width: 541px;
+  padding: 96px 0 0 96px;
+  background: white;
 }
 
 .main-intro__title {
@@ -425,11 +425,11 @@ input {
 }
 
 .main__btn {
+  margin-left: auto;
   width: 157px;
   height: 40px;
   border: 1px solid #000000;
   background: white;
-  margin-left: auto;
   font-size: 14px;
   letter-spacing: 5px;
 }
@@ -482,11 +482,11 @@ input {
           flex-direction: none;
   -ms-flex-wrap: none;
       flex-wrap: none;
+  padding: 0 40px 32px 40px;
   width: 256px;
   height: 450px;
   font-size: 32px;
   color: #fff;
-  padding: 0 40px 32px 40px;
   cursor: pointer;
 }
 
