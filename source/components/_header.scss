@@ -4,6 +4,7 @@
     width: 100%;
     background-size: cover;
     background-color: black;
+    
 
     &__nav {
         @include flexiblePlacement(space-between, none, none, none);
