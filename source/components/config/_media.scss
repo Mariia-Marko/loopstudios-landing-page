@@ -29,7 +29,7 @@
     .main-intro__content {
         @include flexiblePlacement(center, center, column, none);
         padding: 74px 64px 0 75px;
-    text-align: center;
+        text-align: center;
         margin-top: 48px;
         position: inherit;
     }

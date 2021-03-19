@@ -12,3 +12,10 @@ btn.addEventListener('click', () => {
     navItems.classList.toggle('nav-items-in-burger');
     navItems.classList.toggle('nav__items');
   });
+
+(function () {
+    let bmbtn = document.querySelector('.bmbtn');
+    bmbtn.addEventListener('click', () => {
+    bmbtn.classList.toggle('bmbtn_active')
+     });
+}());

@@ -156,8 +156,6 @@ input {
 }
 
 .logo {
-  width: 160px;
-  height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,8 +171,9 @@ input {
           flex-direction: none;
   -ms-flex-wrap: none;
       flex-wrap: none;
+  width: 197px;
+  height: 32px;
   background: url(../img/mobile-menu/logo.svg) no-repeat;
-  background-size: contain;
 }
 
 .nav {
@@ -225,9 +224,11 @@ input {
 }
 
 .bmbtn {
-  background: url(../img/mobile-menu/burger-close.svg) no-repeat;
+  background: url(../img/mobile-menu/burger-menu.svg) no-repeat;
   width: 24px;
-  height: 24px;
+  height: 20px;
+  background-size: contain;
+  cursor: pointer;
 }
 
 @media (max-width: 1100px) {
@@ -253,14 +254,13 @@ input {
     height: 100%;
     left: 24px;
     font-size: 32px;
-    z-index: 25;
   }
   .nav-items-in-burger {
     display: block;
     list-style-type: none;
   }
   .nav-items-in-burger > li {
-    margin-top: 40px;
+    margin-bottom: 24px;
   }
   .nav-number-in-burger {
     display: none;
@@ -279,51 +279,48 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: fixed;
-    left: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: none;
+            flex-direction: none;
+    -ms-flex-wrap: none;
+        flex-wrap: none;
+    position: absolute;
     width: 100%;
-    height: 56px;
     background-color: transparent;
-    border-bottom: 1px solid transparent;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    z-index: 15;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
   .burger-menu-open {
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
-    overflow: hidden;
-    bottom: 0;
-    top: 0;
-    height: 100%;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    height: 92%;
     background: black;
   }
   .burger-menu > span {
     position: absolute;
     right: 24px;
-    top: 40px;
-    cursor: pointer;
-    font-size: 48px;
-    font-weight: 400;
+    top: 45px;
   }
   .burger__logo {
     position: absolute;
     left: 24px;
-    top: 38px;
-    font-size: 22px;
-    font-weight: 500;
+    top: 40px;
   }
   .nav {
     display: none;
   }
+}
+
+.bmbtn_active {
+  background: url(../img/mobile-menu/burger-close.svg) no-repeat;
+  background-size: contain;
 }
 
 .header {
