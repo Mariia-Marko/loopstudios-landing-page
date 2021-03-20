@@ -28,10 +28,11 @@
 
     .main-intro__content {
         @include flexiblePlacement(center, center, column, none);
-        padding: 74px 64px 0 75px;
+        padding: 74px 30px 0 30px;
         text-align: center;
         margin-top: 48px;
         position: inherit;
+        width: 100%;
     }
 
     .main-intro__img {
@@ -44,7 +45,7 @@
     }
 
     .main {
-        margin: 40px 24px 227px 0;
+        margin: 40px 0 227px 0;
         @include flexiblePlacement(center, center, none, none);
         width: 100%;
         position: relative;
@@ -53,6 +54,16 @@
     .mobile-menu {
         display: block;
     }   
+
+    .main__item {
+        width: 100%;
+        height: calc(100px + 6vw);
+    }
+
+    .main__item {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (max-width: 1050px) {

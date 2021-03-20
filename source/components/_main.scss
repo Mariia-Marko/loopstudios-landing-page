@@ -86,6 +86,7 @@
     font-size: 32px; 
     color: #fff;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .main__item:nth-child(-n+4) {
@@ -93,36 +94,44 @@
 }
 
 .main__item:nth-child(1) {
-    background: url(../img/main/earth.svg);
+    background: url(../img/main/earth.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:nth-child(2) {
-    background: url(../img/main/arcade.svg);
+    background: url(../img/main/arcade.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:nth-child(3) {
-    background: url(../img/main/soccer.svg);
+    background: url(../img/main/soccer.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:nth-child(4) {
-    background: url(../img/main/grid.svg);
+    background: url(../img/main/grid.svg) no-repeat;
+    background-size: cover;
     padding-right: 70px;
 }
 
 .main__item:nth-child(5) {
-    background: url(../img/main/road.svg);
+    background: url(../img/main/road.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:nth-child(6) {
-    background: url(../img/main/bitmap.svg);
+    background: url(../img/main/bitmap.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:nth-child(7) {
-    background: url(../img/main/robot.svg);
+    background: url(../img/main/robot.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:nth-child(8) {
-    background: url(../img/main/fisheye.svg);
+    background: url(../img/main/fisheye.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:hover {
@@ -131,32 +140,40 @@
 
 .main__item:hover:nth-child(1) {
     background: $linearGradient, url(../img/main/earth.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:hover:nth-child(2) {
     background: $linearGradient, url(../img/main/arcade.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:hover:nth-child(3) {
     background: $linearGradient, url(../img/main/soccer.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:hover:nth-child(4) {
     background: $linearGradient, url(../img/main/grid.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:hover:nth-child(5) {
     background: $linearGradient, url(../img/main/road.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:hover:nth-child(6) {
     background: $linearGradient, url(../img/main/bitmap.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:hover:nth-child(7) {
     background: $linearGradient, url(../img/main/robot.svg) no-repeat;
+    background-size: cover;
 }
 
 .main__item:hover:nth-child(8) {
     background: $linearGradient, url(../img/main/fisheye.svg) no-repeat;
+    background-size: cover;
 }

@@ -2,6 +2,9 @@
 @import './config/variables';
 @import './config/mixins';
 
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
 .wrapper {
     width: 95%;
     margin: 0 auto;
