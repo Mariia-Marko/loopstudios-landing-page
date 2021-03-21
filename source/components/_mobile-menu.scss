@@ -90,24 +90,20 @@
         background: black;
     }
 
-    .burger-menu > span {
-        position: absolute;
-        right: 24px;
-        top: 45px;
-    }
-
-    .burger__logo {
-        position: absolute;
-        left: 24px;
-        top: 40px;
-    }
-
     .nav {
         display: none;
     }
 }
 
+.burger__logo {
+    display: none;
+}
+
 .bmbtn_active {
     background: url(../img/mobile-menu/burger-close.svg) no-repeat;
     background-size: contain;
+}
+
+.burger-menu > span {
+    display: none;
 }
