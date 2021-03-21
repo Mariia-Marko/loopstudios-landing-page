@@ -12,6 +12,7 @@
     
 .nav {
     @include flexiblePlacement(space-around, none, none, none);
+    display: none;
 }
 
 .burger-menu {
@@ -43,11 +44,11 @@
     .nav-in-burger {
         @include flexiblePlacement(none, none, none, none);
         position: absolute;
-        top: 21%;
         width: 100%;
         height: 100%;
-        left: 24px;
+        padding-left: 24px;
         font-size: 32px;
+        top: 29%;
     }
 
     .nav-items-in-burger {
@@ -85,7 +86,7 @@
 
     .burger-menu-open {
         transition: 0.2s ease-in-out;
-        height: 92%;
+        height: calc(100vh - 64px);
         background: black;
     }
 

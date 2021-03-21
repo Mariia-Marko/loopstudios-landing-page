@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    padding: 44px 165px;
+    padding: 44px 13%;
     background: black;
     @include flexiblePlacement(space-between, none, none, none);
 
@@ -24,8 +24,9 @@
     }
 
     &__link {
-        color: #fff;
+        color: white;
         font-family: 'Alata', sans-serif;
+        font-size: 15px;
     }
 
     &__item {
@@ -45,6 +46,7 @@
 
     &__right-content {
         @include flexiblePlacement(none, none, column, none);
+
     }
 
     &__socials {
@@ -53,6 +55,7 @@
         width: 150px;
         height: 24px;
         margin-left: auto;
+        margin-bottom: 24px;
     }
 
     &__copyright {
@@ -62,7 +65,6 @@
         opacity: 0.5;
         font-weight: 400;
         font-family: 'Alata', sans-serif;
-        margin-top: 33px;
     }
 
     &__socials-link {

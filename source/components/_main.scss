@@ -1,6 +1,6 @@
 .main {
     @include flexiblePlacement(none, none, column, none);
-    margin: 160px 163px 184px;
+    margin: 160px 13% 184px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400px;
 }
@@ -13,7 +13,7 @@
     &__img {
         background: url(../img/main/man-photo.svg) no-repeat;
         height: 500px;
-        width: 74%;
+        width: 100%;
         background-size: contain;
     }
 

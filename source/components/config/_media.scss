@@ -23,20 +23,43 @@
 
     .main-intro {
         @include flexiblePlacement(center, center, column, wrap);
-        position: none;
+        padding: 0 24px;
+        margin-bottom: 96px;
+    }
+
+    .main__title {
+        font-size: 32px;
+    }
+
+    .main-box--head {
+        margin-bottom: 48px;
+        @include flexiblePlacement(center, center, column, none);
     }
 
     .main-intro__content {
         @include flexiblePlacement(center, center, column, none);
-        padding: 74px 30px 0 30px;
         text-align: center;
-        margin-top: 48px;
         position: inherit;
         width: 100%;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .main-intro__title {
+        line-height: 32px;
+        color: #000000;
+        font-weight: 300;
+        font-size: calc(7vw + 2px);
+        margin-bottom: 16px;
+    }
+
+    .main-intro__text {
+        padding: 0 32px;
     }
 
     .main-intro__img {
-        height: 276px;
+        height: 276px;   
+        margin-top: 80px;
     }
 
     .header {
@@ -45,7 +68,7 @@
     }
 
     .main {
-        margin: 40px 0 227px 0;
+        margin: 40px 0 161px;
         @include flexiblePlacement(center, center, none, none);
         width: 100%;
         position: relative;
@@ -58,32 +81,35 @@
     .main__item {
         width: 100%;
         height: calc(100px + 6vw);
-    }
+        margin: 0 24px;
+        margin-bottom: 24px;
+        padding: 52px 199px 20px 20px;
+        font-size: 24px;
+    }   
 
-    .main__item {
-        margin-bottom: 30px;
+    .main__item:nth-child(-n+4) {
+        margin-bottom: 24px;
     }
-
 }
 
 @media (max-width: 1050px) {
     .wrapper {
         width: 100%;
     }
+
     .header__list {
         display: none;
     }
 
     .header__slogan {
-        padding: 0, 40px;
-        width: 327px;
+        padding: 1.5rem;
+        width: 100%;
         font-size: 40px;
-
+        margin-top: 163px;
     }
 
     .main__btn {
         position: absolute;
-        bottom: 0;
-        margin-top: 50px;
+        bottom: -4em;
     }
 }
