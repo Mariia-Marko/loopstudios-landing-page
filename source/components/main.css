@@ -178,6 +178,7 @@ body {
   width: 197px;
   height: 32px;
   background: url(../img/mobile-menu/logo.svg) no-repeat;
+  background-size: cover;
 }
 
 .nav {
@@ -231,7 +232,7 @@ body {
 .bmbtn {
   background: url(../img/mobile-menu/burger-menu.svg) no-repeat;
   width: 24px;
-  height: 20px;
+  height: 16px;
   background-size: contain;
   cursor: pointer;
 }
@@ -320,6 +321,8 @@ body {
 .bmbtn_active {
   background: url(../img/mobile-menu/burger-close.svg) no-repeat;
   background-size: contain;
+  width: 20px;
+  height: 20px;
 }
 
 .burger-menu > span {
@@ -884,8 +887,6 @@ body {
 @media (max-width: 768px) {
   .footer {
     padding: 56px 0;
-  }
-  .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -921,7 +922,7 @@ body {
     margin: 32px 0 48px;
   }
   .footer__socials {
-    margin: 16px auto;
+    margin: 1rem auto;
   }
   .footer__item:not(:last-child) {
     margin-bottom: 24px;
@@ -1037,8 +1038,8 @@ body {
     margin-bottom: 24px;
     padding: 52px 199px 20px 20px;
     font-size: 24px;
-    -webkit-filter: contrast(130%);
-            filter: contrast(130%);
+    -webkit-filter: contrast(115%);
+            filter: contrast(115%);
   }
   .main__item:nth-child(-n+4) {
     margin-bottom: 24px;
@@ -1056,26 +1057,52 @@ body {
   .burger-menu > span {
     position: absolute;
     right: 24px;
-    top: 45px;
+    top: 43px;
     display: block;
   }
   .header__slogan {
     padding: 1.5rem;
+    padding-right: 2.6em;
     width: 100%;
     font-size: 40px;
     margin-top: 163px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .main__item {
     padding: 53px 181px 20px 20px;
+  }
+}
+
+@media (max-width: 321px) {
+  .header__slogan {
+    font-size: 33px;
+  }
+  .main__item {
+    margin: 0;
+    padding: 24px 101px 15px 24px;
+  }
+  .main__list {
+    padding: 0 24px;
   }
 }
 
 @media (max-width: 1050px) {
   .header__list {
     display: none;
+  }
+  .main__item:nth-last-child(-n+4) {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 415px) {
+  .logo,
+  .header__logo {
+    width: 144px;
+    height: 24px;
+    background-size: cover;
   }
 }
 /*# sourceMappingURL=main.css.map */

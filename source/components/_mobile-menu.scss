@@ -8,6 +8,7 @@
     width: 197px;
     height: 32px;
     background: url(../img/mobile-menu/logo.svg) no-repeat;
+    background-size: cover;
 }
     
 .nav {
@@ -35,7 +36,7 @@
 .bmbtn {
     background: url(../img/mobile-menu/burger-menu.svg) no-repeat;
     width: 24px;
-    height: 20px;
+    height: 16px;
     background-size: contain;
     cursor: pointer;
 }
@@ -102,6 +103,8 @@
 .bmbtn_active {
     background: url(../img/mobile-menu/burger-close.svg) no-repeat;
     background-size: contain;
+    width: 20px;
+    height: 20px;
 }
 
 .burger-menu > span {
